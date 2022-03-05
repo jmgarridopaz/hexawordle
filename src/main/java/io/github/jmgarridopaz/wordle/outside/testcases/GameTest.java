@@ -12,26 +12,23 @@ public class GameTest {
     @Test
     public void testDefaultNumberOfTriesIsOne() {
         ForPlaying game = new Wordle();
-        game.newGame();
+        game.newRound();
         Assert.assertEquals( game.triesLeft(), 1 );
     }
-
 
     @Test
     public void testDefaultWordIsHello() {
         ForPlaying game = new Wordle();
-        game.newGame();
+        game.newRound();
         Assert.assertEquals( game.theWord(), "hello");
     }
 
     @Test
     public void testCanCorrectlyGuessTheWord() {
         ForPlaying game = new Wordle();
-        game.newGame();
+        game.newRound();
         GuessResult result = game.guess("hello");
         Assert.assertEquals( result.resultString(), "xxxxx" );
     }
-
-
 
 }

@@ -5,11 +5,11 @@ package io.github.jmgarridopaz.wordle.hexagon;
  */
 public interface ForPlaying {
 
-	void newGame();
+	public void newRound();
 
-	int triesLeft();
+	public int triesLeft();
 
-	GuessResult guess ( String g );
+	public GuessResult guess ( String g );
 
-	String theWord();
+	public  String theWord();
 }

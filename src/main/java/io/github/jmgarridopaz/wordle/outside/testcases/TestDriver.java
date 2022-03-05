@@ -27,7 +27,7 @@ public class TestDriver {
         suite.setName("Wordle_TestSuite");
 
         XmlTest test = new XmlTest(suite);
-        test.setName("Test");
+        test.setName("Wordle_Test");
 
         List<XmlPackage> testPackages = new ArrayList<XmlPackage>();
         String newGameTestPackageName = TestDriver.class.getPackage().getName();

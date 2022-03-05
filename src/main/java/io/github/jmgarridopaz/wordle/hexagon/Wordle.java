@@ -3,8 +3,7 @@ package io.github.jmgarridopaz.wordle.hexagon;
 public class Wordle implements ForPlaying {
 
     @Override
-    public void newGame() {
-
+    public void newRound() {
     }
 
     @Override
